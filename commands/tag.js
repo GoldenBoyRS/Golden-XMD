@@ -12,7 +12,7 @@ export async function tagall(client, message) {
         const text = participants.map(user => `@${user.split('@')[0]}`).join(' \n')
 
         await client.sendMessage(remoteJid, {
-            text: `╭─⌈ 🚀 Golden-XMD Broadcast ⌋\n│\n${text}\n│\n╰─⌊ Powered by DC243 ⌉`,
+            text: `╭─⌈ 🚀 Golden-XMD Broadcast ⌋\n│\n${text}\n│\n╰─⌊ Powered by GoldenBoy⌉`,
             mentions: participants
         })
 
@@ -32,7 +32,7 @@ export async function tagadmin(client, message) {
         
         if (admins.length === 0) return
 
-        const text = `╭─⌈ 🛡️ Golden-XMD Alert ⌋\n│ Admin Alert\n│\n${admins.map(user => `@${user.split('@')[0]}`).join('\n')}\n│\n╰─⌊ DC243 Control ⌉`
+        const text = `╭─⌈ 🛡️ Golden-XMD Alert ⌋\n│ Admin Alert\n│\n${admins.map(user => `@${user.split('@')[0]}`).join('\n')}\n│\n╰─⌊ GoldenBoy Control ⌉`
 
         await client.sendMessage(remoteJid, { text, mentions: admins })
 
@@ -75,7 +75,7 @@ export async function tag(client, message) {
         const messageBody = message.message?.conversation || message.message?.extendedTextMessage?.text || ""
         const commandAndArgs = messageBody.slice(1).trim()
         const parts = commandAndArgs.split(/\s+/)
-        const text = parts.slice(1).join(' ') || 'Digital Crew Alert'
+        const text = parts.slice(1).join(' ') || 'GOLDEN-XMD' Alert'
 
         const quotedMessage = message.message?.extendedTextMessage?.contextInfo?.quotedMessage
         if (quotedMessage) {
