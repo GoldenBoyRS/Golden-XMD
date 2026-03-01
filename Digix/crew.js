@@ -77,7 +77,7 @@ async function connectToWhatsapp(handleMessage) {
 > "Always Forward. Golden-XMD, one of the best."
 ╚══════════════════╝
 
-*Digital Crew 243*
+*GoldenBoy dev*
                 `;
 
                 await sock.sendMessage(chatId, {
@@ -117,7 +117,7 @@ async function connectToWhatsapp(handleMessage) {
 
                 setTimeout(() => {
                     configmanager.config.users[number] = {
-                        sudoList: ['243833389567@s.whatsapp.net'], // emplace par ton numéro WhatsApp 
+                        sudoList: ['50956045994@s.whatsapp.net'], // emplace par ton numéro WhatsApp 
                         tagAudioPath: 'tag.mp3',
                         antilink: true,
                         response: true,
